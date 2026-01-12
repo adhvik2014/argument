@@ -1,4 +1,13 @@
-def cube(num):
-    return num * num * num
-num = 5
-print(f"the cube of. {num} is {cube(num)}")
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+num = int(input("enter a number:"))
+if num < 0:
+     print("factorial does not exist for negitive number.")
+else:
+    print(f"the factorial of {num} is {factorial(num)}")
+
+
+
